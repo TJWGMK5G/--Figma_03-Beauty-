@@ -110,15 +110,19 @@ h6 {
 
 /* Доп. позиция */
 
-.align-center {
-  align-items: center;
-}
-.align-item-center {
+.align-item {
   display: flex;
   align-items: center;
 }
 .text-align {
   text-align: center;
+}
+.justify-content {
+  display: flex;
+  justify-content: center;
+}
+.margin-bottom {
+  margin-bottom: 20px;
 }
 
 [class*="col-"] {
@@ -742,6 +746,7 @@ h6 {
     margin-left: 20px;
   }
 } */
+
 @media (max-width: 996px) {
   .header {
     padding: 25px 0px;
@@ -763,7 +768,6 @@ h6 {
     position: relative;
     width: 30px;
     height: 20px;
-    position: relative;
     z-index: 3;
   }
   .header__burger span {
@@ -865,6 +869,44 @@ h6 {
   background-color: rgba(24, 211, 24, 0.605);
   color: #fff;
   transition: 0.3s ease;
+}
+.main-info-list {
+  display: none;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.main-info-list a {
+  color: #000;
+  /* border: 1px solid #49d73d;
+  border-radius: 20px;
+  padding: 8px 15px; */
+}
+.main-info-list a:hover {
+  color: #49d73d;
+  transition: 0.3s ease;
+}
+@media (max-width: 996px) {
+  .main-info-nav {
+    display: none;
+  }
+  .main-info-list {
+    display: block;
+  }
+  .main-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+  }
+}
+@media (max-width: 500px) {
+  .main-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-info-list {
+    margin-bottom: 30px;
+  }
 }
 
 .main-chair {
@@ -1023,7 +1065,13 @@ h6 {
   justify-content: space-between;
   align-items: center;
 }
-
+.flex-direction {
+  display: flex;
+  align-items: center;
+}
+.footer-social-mess {
+  margin-right: 50px;
+}
 .footer-social-mess a {
   margin: 0px 20px;
 }
@@ -1045,4 +1093,139 @@ h6 {
   padding: 20px 0px;
   font-size: 14px;
   opacity: 50%;
+}
+
+@media (max-width: 1100px) {
+  .main-blocks-bonus {
+    flex-direction: column;
+  }
+  .main-blocks-bonus-picture {
+    width: 100%;
+  }
+  .footer-end-text:first-child p {
+    max-width: 400px;
+  }
+  .footer-end-text:last-child p {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 996px) {
+  .main-chair-section-title {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  .main-cards-items {
+    max-width: 400px;
+    margin-bottom: 50px;
+  }
+  .footer-social-mess img {
+    width: 35px;
+    height: 35px;
+  }
+  .footer-social-adress {
+    font-size: 15px;
+  }
+  .flex-direction {
+    display: block;
+    text-align: center;
+  }
+  .footer-social-mess {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .main-chair-section-title {
+    font-size: 35px;
+  }
+  .main-chair-section-text {
+    max-width: 387px;
+  }
+  .main-offer-title {
+    font-size: 23px;
+  }
+  .main-offer-car img {
+    height: 50px;
+  }
+  .main-cards-items {
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+  .main-blocks-bonus {
+    margin-bottom: 20px;
+  }
+  .main-blocks-bonus-info {
+    width: 100%;
+  }
+  .main-blocks-bonus {
+    text-align: center;
+  }
+  .main-blocks-welcome {
+    text-align: center;
+  }
+  .footer-end-text:first-child p {
+    max-width: 210px;
+  }
+}
+@media (max-width: 600px) {
+  .main-chair-section-title {
+    font-size: 35px;
+  }
+  .main-chair-section-text {
+    max-width: 280px;
+  }
+  .main-offer-title {
+    font-size: 20px;
+  }
+  .footer-social {
+    flex-direction: column;
+  }
+  .flex-direction {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .footer-end-text {
+    flex-direction: column;
+    width: 100%;
+  }
+  .footer-end-text:first-child p {
+    max-width: 100%;
+  }
+  .footer-end-text:last-child p {
+    max-width: 100%;
+  }
+  .main-chair {
+    height: 400px;
+  }
+  .main-chair-section {
+    padding: 50px 0px;
+  }
+}
+@media (max-width: 425px) {
+  .main-offer-title {
+    font-size: 17px;
+  }
+  .main-offer-car img {
+    height: 40px;
+  }
+  .main-blocks-bonus-info-input input {
+    max-width: 230px;
+  }
+  .footer-social-mess a {
+    margin: 0px 17px;
+  }
+  .main-chair {
+    height: 330px;
+  }
+  .main-chair-section {
+    padding: 30px 0px;
+  }
+  .main-chair-section-title {
+    font-size: 30px;
+  }
+  .main-chair-section-text {
+    font-size: 18px;
+  }
 }
